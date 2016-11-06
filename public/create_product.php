@@ -1,10 +1,9 @@
 <?php
-	session_start();
 
 	require '../vendor/autoload.php';
 	use phpish\shopify;
 
-	require __DIR__.'../../conf.php';
+	require '../../conf.php';
 	require __DIR__.'/handle.php';
 
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $_SESSION['oauth_token']);
