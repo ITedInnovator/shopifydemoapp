@@ -1,6 +1,10 @@
 <?php
 session_start();
-//include the 
+//Validate the Product form data.
+$vendor = $_POST['vendor'];
+$title = $_POST['title'];
+$product_type = $_POST['prodtype'];
+//include the code to make the API request to add a product.
 require __DIR__ . '/create_product.php';
 
 

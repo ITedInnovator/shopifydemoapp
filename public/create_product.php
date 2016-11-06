@@ -16,10 +16,10 @@
 		(
 			'product' => array
 			(
-				"title" => $_POST['title'],
-				"body_html" => $_POST['body'],
-				"vendor" => $_POST['vendor'],
-				"product_type" => $_POST['prodtype'],
+				"title" => $title,
+				"body_html" => $body,
+				"vendor" => $vendor,
+				"product_type" => $product_type,
 				"variants" => array
 				(
 					array

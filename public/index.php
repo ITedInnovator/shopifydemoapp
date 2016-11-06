@@ -22,8 +22,8 @@ print $url;*/
 <input type="textarea"  size="250">Body</>
 <input type="text" name="vendor" maxlength=200>Vendor</>
 <input type="text" name="prodtype" maxlength=200>Product Type</>
-<input type="file" name="image" enctype="multipart/form-data">Product Image</>
-<textarea>Easy! You should check out MoxieManager!</textarea>
+<input type="file" name="file" enctype="multipart/form-data">Product Image</>
+<textarea name="body">Easy! You should check out MoxieManager!</textarea>
 <input type="submit" name="submit" value="Add Product"></>
 </body>
 </html>
