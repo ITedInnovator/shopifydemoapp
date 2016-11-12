@@ -4,9 +4,9 @@
 	use phpish\shopify;
 
 	require '../../conf.php';
-	require __DIR__.'/handle.php';
+	//require __DIR__.'/handle.php';
 
-	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $_SESSION['oauth_token']);
+	$shopify = shopify\client(SHOPIFY_SHOP, SHOPIFY_APP_API_KEY, SHOPIFY_APP_PASSWORD, true);
 
 	try
 	{

@@ -1,29 +1,23 @@
 <?php
-require_once '../src/init.php';
-
-$app = new App();
-$app->parseUrl();
-/*$url = $_GET['url'];
-
-print $url;*/
+//require 'header.php';
+require 'redirect.php';
+if(isset($_SESSION['userid'])){
+	redirect_user('product_form.php');
+}
+else{
+	$register = "<a href=register.php>Sign Up</a>";
+}
 ?>
 <!DOCTYPE html>
-<html>
 <head>
-  <script src="../js/dropzone.js"></script>
-  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-  <script>tinymce.init({ selector:'textarea' });</script>
+<title>Welcome to the shopify demo app login page.</title>
 </head>
 <body>
-  
-
-<form action="handle.php" class="dropzone" method="post" enctype="multipart/form-data">
-<input type="text" name="title">Title</>
-<input type="textarea"  size="250">Body</>
-<input type="text" name="vendor" maxlength=200>Vendor</>
-<input type="text" name="prodtype" maxlength=200>Product Type</>
-<input type="file" name="file" enctype="multipart/form-data">Product Image</>
-<textarea name="body">Easy! You should check out MoxieManager!</textarea>
-<input type="submit" name="submit" value="Add Product"></>
+<form class="form" action="regloginhandle.php" method="post">
+<input type="email" name="email">enter email</>
+<input type="password" name="password">Enter Password</>
+<input type="submit" name="submit" value="login" id="login"></> 
+<input type="hidden" name="login"></>
+</form>
+<?php print $register; ?>
 </body>
-</html>

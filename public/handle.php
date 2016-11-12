@@ -1,9 +1,13 @@
 <?php
 session_start();
+$page_title = "handleproduct";
+$scripts = '';
+require "header.php";
 //Validate the Product form data.
 $vendor = $_POST['vendor'];
 $title = $_POST['title'];
 $product_type = $_POST['prodtype'];
+$body = $_POST['body'];
 //include the code to make the API request to add a product.
 require __DIR__ . '/create_product.php';
 
@@ -31,8 +35,8 @@ if(isset($name) && !empty($name)){
 				require __DIR__ . '/add_productimage.php';
 			}
 			else{
-				print "Image was not able to be uploaded.<br>" .
-				$_FILES['file']['error'];	
+				print "Image was not able to be uploaded.<br>";
+				//. $_FILES['file']['error'];	
 			}
 			echo "<br>" . $tmp_name;
 		}
