@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once '../src/init.php';
 $page_title = 'product_form';
 $scripts =  "<script src='../js/dropzone.js'></script>
   <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
