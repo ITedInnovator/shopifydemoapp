@@ -15,8 +15,24 @@ $loadimage = $shopify('POST /admin/products/#{id}/images.json', array(), array
 (
 "image" => array(
 "variant_ids" = array(),
-"attachment" = $base64 
-"filename" = $name
+"attachment" = $base64, 
+"filename" = $name,
 
 )
+print_r($loadimage);
+	}
+	catch (shopify\ApiException $e)
+	{
+		# HTTP status code was >= 400 or response contained the key 'errors'
+		echo $e;
+		print_r($e->getRequest());
+		print_r($e->getResponse());
+	}
+	catch (shopify\CurlException $e)
+	{
+		# cURL error
+		echo $e;
+		print_r($e->getRequest());
+		print_r($e->getResponse());
+	}
 

@@ -1,0 +1,48 @@
+body{
+	background-color: #535;
+}
+
+.form-input, .upload-area{
+	display: block;
+	margin: 5px;
+	padding-right: 311px;
+	width: 100px;
+	height: 30px;
+	
+}
+h1{
+	text-align: center;
+	font-family: times-new-roman;
+}
+input{
+	width: 100%;
+}
+.dropzone,.form{
+	display: block;
+	width: 415px;
+	height: 200px;
+	margin-left: 619px;
+}
+a{
+	display: inline-block;
+}
+#register-link:link{
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 619px;
+	margin-bottom: 200px;
+	border: 2px solid;
+	color: #000000;
+}
+#register-link:visited{
+	display: inline-block;
+	color: #FF0000;
+}
+#form-login{
+	display: inline-block;
+	margin-left: 4px;
+ }
+
+
+
+
