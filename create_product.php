@@ -3,7 +3,7 @@
 	require '../vendor/autoload.php';
 	use phpish\shopify;
 
-	require '../../conf.php';
+	require '../conf.php';
 	//require __DIR__.'/handle.php';
 
 	$shopify = shopify\client(SHOPIFY_SHOP, SHOPIFY_APP_API_KEY, SHOPIFY_APP_PASSWORD, true);

@@ -1,5 +1,5 @@
 <?php
-require '../mysqli_connect.php';
+require 'mysqli_connect.php';
 if(mysqli_connect_errno($dbc)){
 	print "An error connecting to the database occurred";
 }

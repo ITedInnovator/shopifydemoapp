@@ -4,7 +4,7 @@ session_start();
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 
-	require __DIR__.'../../conf.php';
+	require __DIR__.'../conf.php';
 	//require __DIR__.'/handle.php';
 
 	$shopify = shopify\client(SHOPIFY_SHOP, SHOPIFY_APP_API_KEY, SHOPIFY_APP_PASSWORD, true);
